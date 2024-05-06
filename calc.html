@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container zen-dots-regular">
+        <div class="card">
+            <div class="screen">
+                <h3>Calculator</h3>
+            </div>
+            <input type="text" id="show_data">
+            <div class="body">
+                <div class="row">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button action">+</button>
+                </div>
+                <div class="row">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button action">-</button>
+                </div>
+                <div class="row">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button action">x</button>
+                </div>
+                <div class="row">
+                    <button class="button action action-red">C</button>
+                    <button class="button">0</button>
+                    <button class="button action action-blue">=</button>
+                    <button class="button action">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+<body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const card = document.querySelector('.card');
+            const h3 = document.querySelector('h3');
+
+            function changeBackgroundColor() {
+                const randomColor = getRandomColor();
+                card.style.backgroundColor = randomColor;
+                h3.style.backgroundColor = randomColor;
+            }
+
+            function getRandomColor() {
+                const letters = '0123456789ABCDEF';
+                let color = '#';
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            // Change background color every 3 milliseconds
+            setInterval(changeBackgroundColor, 2000);
+        });
+    </script>
+
+</body>
+
+</html>

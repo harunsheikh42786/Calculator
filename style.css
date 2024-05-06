@@ -1,0 +1,79 @@
+.zen-dots-regular {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    font-size: 35px;
+}
+
+.card{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: background-color 2s ease;
+}
+h3{
+    color: white;
+    margin: 0;
+}
+
+.screen{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input{
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    font-size: 25px;
+    width: 235px;
+    margin-bottom: 10px;
+    
+}
+.row{
+    padding: 5px 10px;
+}
+
+button{
+        font-size: 25px;
+        color: white;
+        background-color: rgb(43, 226, 49);
+        border: 2px solid white;
+        border-radius: 27px;
+        margin: 0;
+        padding: 10px 0;
+        width: 50px;
+}
+button:hover{
+    background-color: rgb(47, 179, 38);
+}
+
+.action{
+        color: black;
+        border-radius: 10px !important;
+        background-color: rgb(252, 255, 73);
+}
+.action:hover{
+        background-color: rgb(189, 189, 53);
+}
+
+.action-blue{
+    background-color: rgb(73, 73, 255);
+}
+.action-blue:hover{
+    background-color: rgb(57, 57, 197);
+}
+
+.action-red{
+    background-color: rgb(255, 73, 73) !important;
+}
+.action-red:hover{
+    background-color: rgb(197, 57, 57) !important;
+}
